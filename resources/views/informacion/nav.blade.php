@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light beta">
+<nav class="navbar navbar-expand-lg navbar-light beta bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="#" class="imagen" alt="cargando ....">
