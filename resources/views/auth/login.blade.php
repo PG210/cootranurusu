@@ -3,8 +3,8 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="object-contain md:object-scale-down text-gray-500" />
+            <a>
+                <x-application-logo class="object-contain md:object-scale-down text-gray-100" />
             </a>
         </x-slot>
 

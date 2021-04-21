@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#"><b>Inicio</b></a>
+          <a class="nav-link active text-white" aria-current="page" href="{{url('/')}}"><b>Inicio</b></a>
         </li>
     
         <li class="nav-item dropdown">
@@ -36,9 +36,8 @@
             <b>Nosotros</b>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Mision</a></li>
-            <li><a class="dropdown-item" href="#">Vision</a></li>
-            <li><a class="dropdown-item" href="#">Ubicacion</a></li>
+            <li><a class="dropdown-item" href="{{route('mis')}}">Mision</a></li>
+          
           </ul>
         </li>
         

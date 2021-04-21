@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuAdmin;
-
+use App\Http\Controllers\Informacion;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +28,7 @@ Route::get('/admin', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('cootranur/informacion/mision-vision', [Informacion::class, 'mision'])->name('mis');
 
 require __DIR__.'/auth.php';
