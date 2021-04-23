@@ -2,11 +2,12 @@
 @section('content')
 <x-guest-layout>
     <x-auth-card>
-        <x-slot name="logo">
+       <!-- <x-slot name="logo">
             <a>
                 <x-application-logo class="object-contain md:object-scale-down text-gray-100" />
             </a>
-        </x-slot>
+        </x-slot>-->
+        <img src="{{url('img/fondo.png')}}" width="500" class="img-fluid" alt="Cargando Imagen...">
 
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
