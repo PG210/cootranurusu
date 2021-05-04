@@ -13,6 +13,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link href="{{ url('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <!--instanciar iconos-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>

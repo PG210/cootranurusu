@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuAdmin;
 use App\Http\Controllers\Informacion;
-
+use App\Http\Controllers\Archivo;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,10 +24,14 @@ Route::get('/admin', function () {
     return view('admin.vistaprincipal');
 })->middleware(['auth'])->middleware(['admin'])->name('prin');
 
+Route::post('cootranur/registrar/archivo', [Archivo::class, 'carga'])->middleware(['admin'])->name('registrar');
+Route::get('cootranur/descarga/archivo/{file}', [Archivo::class, 'descarga'])->name('descargas');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+//Route::get('/dashboard', function () {
+ //   return view('dashboard');
+//})->middleware(['auth'])->name('dashboard');
+
+Route::get('/dashboard', [UsuAdmin::class, 'principal'])->middleware(['auth'])->name('dashboard');
 
 Route::get('cootranur/informacion/mision-vision', [Informacion::class, 'mision'])->name('mis');
 

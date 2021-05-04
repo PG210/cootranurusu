@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ModeloArchivo;
 
 class UsuAdmin extends Controller
 {
+  
     public function principal(){
-        return view('admin.vistaprincipal');
-    }
+        $msj='';
+        $ar = ModeloArchivo::all();
+            return view('dashboard', compact('ar','msj'));
+        
+    } 
 }
