@@ -11,7 +11,7 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-0 sm:flex">
                     <x-nav-link style="color:white; text-decoration: none;" :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        <b>{{ __('Inicio') }}</b>
+                        <b>{{ __('Información') }}</b>
                     </x-nav-link>
                     @if(Auth::user()->admin=='admin')
                     <x-nav-link style="color:white; text-decoration: none;" :href="route('prin')" >

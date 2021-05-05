@@ -33,11 +33,10 @@ class Archivo extends Controller
                             </svg>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>';
-                           //echo $msj;
-                                                      
-                          return redirect()->route('dashboard', compact('msj'));
-
-
+                           echo $msj; 
+                           
+                           
+                           return view('admin.vistaprincipal');
                         }
                         else{
                            /* echo'<script type="text/javascript"> sirve para poner un alert de javascript
