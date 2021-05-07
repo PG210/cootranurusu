@@ -17,7 +17,7 @@ class UsuAdmin extends Controller
     } 
     public function vistaprin(){
            $info = ModeloArchivo::all();
-           $dato = User::all();
+           $dato = User::all()->where('admin', '=', NULL);//solamente sale los usuarios que no son administradores
             return view('admin.vistaprincipal', compact('info', 'dato'));
         
     } 
@@ -38,10 +38,12 @@ class UsuAdmin extends Controller
             //echo 'window.location.href="admin"';
             */
 
-            return redirect()->route("prin"); 
-           
-            
-                       
-       
+            return redirect()->route("prin");    
     }
+    public function borrarusu($id){
+        $res = user::findOrfail($id);
+        $res-> delete();
+        return redirect()->route("prin");
+     }
+
 }

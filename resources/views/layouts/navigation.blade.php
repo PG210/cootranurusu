@@ -17,10 +17,6 @@
                     <x-nav-link style="color:white; text-decoration: none;" :href="route('prin')" >
                       <b>{{ __('Administrador') }}</b>
                     </x-nav-link>
-                    @else
-                    <x-nav-link style="color:white; text-decoration: none;" :href="route('dashboard')" >
-                     <b>{{ __('Informacion') }}</b>
-                    </x-nav-link>
                     @endif
                 </div>
             </div>

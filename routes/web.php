@@ -35,4 +35,7 @@ Route::get('cootranur/informacion/mision-vision', [Informacion::class, 'mision']
 
 Route::get('cootranur/informacion/borrar/{id}', [UsuAdmin::class, 'borrar'])->middleware(['admin'])->name('eliminar');
 
+//eliminar usuario
+Route::get('cootranur/eliminar/usuario/{id}', [UsuAdmin::class, 'borrarusu'])->middleware(['admin'])->name('eliminarusu');
+
 require __DIR__.'/auth.php';
