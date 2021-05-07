@@ -37,7 +37,8 @@
                                     
                      <!--end cargar archivo-->
                               <!--formulario-->
-                        <form class="row g-3" action="{{route('registrar')}}" method="POST"  enctype="multipart/form-data">
+                        <br>
+                        <form class="row g-3 bg-blue-300" action="{{route('registrar')}}" method="POST"  enctype="multipart/form-data">
                         @csrf
                             <div class="col-md-4">
                                 <label  for="uploadedfile" class="form-label">Cargar Archivo</label>
@@ -61,7 +62,6 @@
                           <table class="table">
                                 <thead class="bg-blue-300">
                                     <tr>
-                                    <th scope="col">Número</th>
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Archivo</th>
                                     <th scope="col"></th>
@@ -70,9 +70,8 @@
                                 <tbody>
                                 @foreach($info as $p)
                                     <tr class="bg-purple-200">
-                                    <th scope="row">{{$p->id}}</th>
-                                    <td>{{$p->nombre}}</td>
-                                    <td>{{$p->archivo}}</td>
+                                    <td scope="row">{{$p->nombre}}</td>
+                                    <td scope="row">{{$p->archivo}}</td>
                                     <td>
                                     <!--boton-->
                                     <a href="{{route('eliminar',$p->id)}}" type="button" class="btn btn-outline-danger fw-bold" onclick="alert('Archivo eliminado con exito!');">
@@ -99,7 +98,6 @@
                           <table class="table">
                                 <thead class="bg-blue-300">
                                     <tr>
-                                    <th scope="col">Número</th>
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Correo</th>
                                     <th scope="col"></th>
@@ -108,7 +106,6 @@
                                 <tbody>
                                 @foreach($dato as $s)
                                     <tr class="bg-purple-200">
-                                    <th scope="row">{{$s->id}}</th>
                                     <td>{{$s->name}}</td>
                                     <td>{{$s->email}}</td>
                                     <td>
