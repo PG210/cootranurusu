@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ModeloArchivo;
+use App\Models\User;
 
 class UsuAdmin extends Controller
 {
@@ -16,7 +17,8 @@ class UsuAdmin extends Controller
     } 
     public function vistaprin(){
            $info = ModeloArchivo::all();
-            return view('admin.vistaprincipal', compact('info'));
+           $dato = User::all();
+            return view('admin.vistaprincipal', compact('info', 'dato'));
         
     } 
     public function borrar($id){
