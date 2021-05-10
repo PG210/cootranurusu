@@ -48,8 +48,8 @@ class Archivo extends Controller
                             </div>';
                            // $result='<div class="alert alert-success">Atención</div>';
                            
-                           echo $result;
-                           return view('admin.vistaprincipal');
+                           //echo $result;
+                            return redirect()->route('prin');
                            
                         }
                 }

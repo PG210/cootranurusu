@@ -20,9 +20,9 @@
 
             <!-- Email Address -->
             <div>
-                <x-label for="email" :value="__('Correo')" />
+                <x-label for="email" :value="__('Correo Electrónico')" />
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="ejemplo@gmail.com" required autofocus />
             </div>
 
             <!-- Password -->

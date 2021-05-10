@@ -41,7 +41,7 @@
                         <form class="row g-3 bg-blue-300" action="{{route('registrar')}}" method="POST"  enctype="multipart/form-data">
                         @csrf
                             <div class="col-md-4">
-                                <label  for="uploadedfile" class="form-label">Cargar Archivo</label>
+                                <label  for="uploadedfile" class="form-label">Cargar Archivo (Solo se admite archivos .pdf)</label>
                                 <input name="uploadedfile" id="uploadedfile" type="file"  class="form-control" required />
                             </div>
                             <div class="col-md-4">
@@ -49,7 +49,7 @@
                                     <input type="text" class="form-control" id="nombre" name="nombre" required>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary" type="submit" onclick="alert('Archivo Guardado con exito!');">Guardar</button>
+                                <button class="btn btn-primary" type="submit">Guardar</button>
                             </div>
                             </form>
                         <!--end-form-->

@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#2A45CD" />
 
-        <title>Laravel</title>
+        <title>Cootranur LTDA</title>
 
 
 
