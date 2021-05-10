@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#2A45CD" /><!--color a la barra de busqueda en el celular-->
 
-        <title>Laravel</title>
+        <title>Cootranur LTDA</title>
 
-
-
+       
+       
         <link rel="shortcut icon" href="{{url('img/1.svg')}}"><!--icono de la pagina web en la ruta-->
 
         <!-- Fonts -->
@@ -55,7 +56,7 @@
             <b>Nosotros</b>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{route('mis')}}">Mision</a></li>
+            <li><a class="dropdown-item" href="{{route('mis')}}">Misión y Visión</a></li>
     
           </ul>
         </li>
@@ -68,7 +69,7 @@
             @auth
             <a class="nav-link text-white" href="{{ url('/dashboard') }}">Regresar</a>
             @else
-            <a class="nav-link text-white "  href="{{ route('login') }}"><b>Iniciar sesion</b></a>
+            <a class="nav-link text-white "  href="{{ route('login') }}"><b>Iniciar sesión</b></a>
             </li>
             <li class="nav-item">
                 @if (Route::has('register'))

@@ -1,11 +1,10 @@
 <div class=" mt-5">
     <div class="card">
         <div class="row mb-4 ">
-            <div class="col-md-4 col-sm-11 col-xs-11">
+            <div class="col-md-5 col-sm-11 col-xs-11">
                 <div class="footer-text pull-left">
                     <div class="d-flex">
-                        <h1 class="font-weight-bold mr-2 px-0" style="color:#16151a; background-color:#3B58F8">COOTRANUR</h1>
-                        <h1 style="color: #16151a">LTDA</h1>
+                        <p class="px-0 fs-2"><b>COOTRANUR LTDA</b></p>
                     </div>
                     <p class="card-text">
                    COOPERATIVA DE TRANSPORTADORES URBANOS CIUDAD DE PASTO
@@ -14,7 +13,7 @@
                     <div class="social mt-2 mb-3"> <i class="fa fa-facebook-official fa-lg"></i> <i class="fa fa-instagram fa-lg"></i> <i class="fa fa-twitter fa-lg"></i> <i class="fa fa-linkedin-square fa-lg"></i> <i class="fa fa-facebook"></i> </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-1 col-xs-1 mb-2"></div>
+           
             <div class="col-md-2 col-sm-4 col-xs-4">
                 <h5 class="heading">Oficina Principal</h5>
                 <ul>
@@ -27,15 +26,15 @@
                 <h5 class="heading">Estación de Servicio Cootranur</h5>
                 <ul class="card-text">
                     Cll 22 No. 9 Este 20<br>
-                    Via Oriente<br>
+                    Vía Oriente<br>
                     732 5233
                 </ul>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-4">
+            <div class="col-md-3 col-sm-4 col-xs-4">
                 <h5 class="heading">Lubricentro Cootranur</h5>
                 <ul class="card-text">
                     
-                    Via Oriente<br>
+                    Vía Oriente<br>
                    cootranurltda@hotmail.com
                 </ul>
             </div>

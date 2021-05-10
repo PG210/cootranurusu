@@ -24,12 +24,12 @@
                          @foreach($ar as $p)
                             
                                 <div class="col-sm-6 my-3">
-                                <div class="card">
-                                    <div class="card-body tema">
-                                    <h5 class="card-title">{{$p->nombre}}</h5>
-                                    <p class="card-text"></p>
+                                <div class="card bg-blue-300">
+                                    <div class="card-body" >
+                                    <h5 class="card-title" >{{$p->nombre}}</h5>
+                                    <p class="card-text" ></p>
                                         <a href="{{route('descargas', $p->archivo)}}" 
-                                            class="btn btn-success" download="Archivo-Cootranur">
+                                        class="btn btn-primary"  download="Archivo-Cootranur">
                                             Descargar Archivo
                                         </a>
                                     </div>

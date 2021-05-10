@@ -1,6 +1,6 @@
 <div class="container">
            <br>
-            <h2 class="alert alert-dark text-center">BIENVENIDOS A COOTRANUR LTDA</h2><br>
+            <h2 class="alert alert-dark text-center">BIENVENIDOS</h2><br>
             
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">

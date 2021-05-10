@@ -36,7 +36,7 @@
             <b>Nosotros</b>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{route('mis')}}">Mision</a></li>
+            <li><a class="dropdown-item" href="{{route('mis')}}">Misión y visión</a></li>
           
           </ul>
         </li>
@@ -49,7 +49,7 @@
             @auth
             <a class="nav-link text-white" href="{{ url('/dashboard') }}">Regresar</a>
             @else
-            <a class="nav-link text-white "  href="{{ route('login') }}"><b>Iniciar sesion</b></a>
+            <a class="nav-link text-white "  href="{{ route('login') }}"><b>Iniciar sesión</b></a>
             </li>
             <li class="nav-item">
                 @if (Route::has('register'))
